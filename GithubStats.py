@@ -327,6 +327,20 @@ def main():
             get_views(g, g.get_repo("KillrVideo/killrvideo-java").full_name)
             get_views(g, g.get_repo("KillrVideo/killrvideo-integration-tests").full_name)
             get_views(g, g.get_repo("KillrVideo/killrvideo-csharp").full_name)
+            
+        elif args.github_org == "DataStax-Examples":
+            get_views(g, g.get_repo("DataStax-Examples/quickstart-nodejs").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/quickstart-java").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/quickstart-python").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/quickstart-csharp").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/quickstart-c").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/graphql-example-java").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/todo-astra-jamstack-netlify").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/java-cassandra-driver-from3x-to4x").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/getting-started-with-astra-java").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/killrvideo-developerapis").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/dsegraphframes-spark-filtering").full_name)
+            get_views(g, g.get_repo("DataStax-Examples/ex_bestpractices").full_name)
 
     elif args.mode == "commits":
         get_commits(g, args.github_org + '/' + args.github_repo,
